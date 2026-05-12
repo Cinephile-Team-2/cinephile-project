@@ -1,4 +1,5 @@
 import React from 'react'
+import Nav from './Nav.jsx'
 
 function Header() {
   return (
@@ -7,7 +8,9 @@ function Header() {
             <div>
                  <img src="#" alt="Logo Cinephile"/>
             </div>
+
             <div>
+                <Nav/>
                 <p>Sign In</p>
                 <button>Get Access</button>
             </div>

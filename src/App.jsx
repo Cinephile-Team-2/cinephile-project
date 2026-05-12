@@ -10,6 +10,7 @@ function App() {
   return (
     <>
       <Header/>
+      <p>Landing Page </p>
       <Footer/>
     </>
   )
