@@ -1,18 +1,18 @@
-import { useState } from 'react'
-import './App.css'
 import Header from './components/Header.jsx'
 import Footer from './components/Footer.jsx'
 
+import React from 'react'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+function Pricing() {
   return (
+
     <>
       <Header/>
       <Footer/>
     </>
+      
+
   )
 }
 
-export default App
+export default Pricing
