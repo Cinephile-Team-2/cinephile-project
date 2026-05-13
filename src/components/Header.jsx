@@ -5,8 +5,8 @@ function Header() {
   return (
     <div>
         <header>
-            <div>
-                 <img src="#" alt="Logo Cinephile"/>
+            <div className="text-3xl font-extrabold tracking-tight text-cyan-400">
+              CINEPHILE
             </div>
 
             <div>
