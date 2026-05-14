@@ -15,19 +15,26 @@
  
 }
 
+@theme {  
+  
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-text: var(--text);
+  --color-bg: var(--bg);
+  --color-gris: var(--gris);
+  --color-fucsia: var(--fucsia);
+  --color-border-custom: var(--border);
+
+  --font-spline: var(--SplineSans);
+  --font-vietnam: var(--BeVietnamPro);
+}
+
 body {
   margin: 0;
+  
 }
-/*
 #root {
-  width: 1126px;
-  max-width: 100%;
- 
-  text-align: center;
-  border-inline: 1px solid var(--border);
-  min-height: 100svh;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
+  background-color: var(--bg);
 }
-*/
+
+

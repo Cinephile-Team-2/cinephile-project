@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Header/>
-      <p>Landing Page </p>
+      <main>Landing Page </main>
       <Footer/>
     </>
   )
