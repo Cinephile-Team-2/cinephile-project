@@ -96,6 +96,11 @@ npm: **npm install react-router-dom**
 o
 yarn: **yarn add react-router-dom**
 
+## 5. react-icons
+**npm install react-icons** 
+o 
+**yarn add react-icons**
+
 # Tabla de contenidos
 ## Diseño
 ### Enlaces Figma a los mokups que nos han proporcionado para realizar la maquetación y el USER FLOW que nos indica la navegación entre páginas.
