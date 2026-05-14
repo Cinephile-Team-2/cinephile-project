@@ -3,9 +3,7 @@ import React from "react";
 import PricingCard from "./PricingCard";
 
 function PricingSection() {
-
   const plans = [
-
     {
       subtitle: "ESSENTIALS",
       title: "BASIC",
@@ -47,27 +45,20 @@ function PricingSection() {
         "Dolby Atmos Mastering",
       ],
     },
-
   ];
 
-
   return (
-
     <section
       className="
         bg-[var(--bg)]
-        px-6
-        py-24
+        px-6 md:px-24 pt-48 pb-16
         text-[var(--text)]
       "
     >
-
       <div className="mx-auto max-w-[1180px]">
-
         {/* Heading */}
 
         <div className="mb-20 text-center">
-
           <h1
             className="
               mb-6
@@ -78,7 +69,7 @@ function PricingSection() {
               leading-none
 
               md:text-6xl
-              lg:text-[72px]
+              lg:text-[48px]
             "
           >
             Choose Your Experience
@@ -100,10 +91,7 @@ function PricingSection() {
             Precision-engineered streaming for the ultimate cinematic immersion.
             Select the tier that matches your passion.
           </p>
-
         </div>
-
-
 
         {/* Cards */}
 
@@ -117,9 +105,7 @@ function PricingSection() {
             lg:grid-cols-3
           "
         >
-
           {plans.map((plan, index) => (
-
             <PricingCard
               key={index}
               subtitle={plan.subtitle}
@@ -129,16 +115,11 @@ function PricingSection() {
               features={plan.features}
               premium={plan.premium}
             />
-
           ))}
-
         </div>
-
       </div>
-
     </section>
-
-  )
+  );
 }
 
-export default PricingSection
+export default PricingSection;

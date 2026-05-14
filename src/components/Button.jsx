@@ -1,5 +1,6 @@
 const Button = ({ children, variant = 'primary', size = 'md', className = '', ...props }) => {
-  const baseClasses = 'font-spline font-bold uppercase tracking-widest transition-all focus:outline-none active:scale-95';
+  const baseClasses =
+    "font-spline font-bold uppercase tracking-widest transition-all focus:outline-none active:scale-95 hover:cursor-pointer";
   
   const variants = {
 
