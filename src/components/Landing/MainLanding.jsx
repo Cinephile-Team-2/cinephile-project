@@ -24,7 +24,7 @@ function MainLanding() {
             {/* Side Cards */}
             <SideCard/>
           </section>
-    </main>.
+    </main>
   )
 }
 

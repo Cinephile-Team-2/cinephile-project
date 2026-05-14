@@ -15,7 +15,7 @@ function MainCard() {
                 SCI-FI
               </div>
             </div>
-  ).
+  )
 }
 
 export default MainCard

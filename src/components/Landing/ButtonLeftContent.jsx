@@ -11,7 +11,7 @@ function ButtonLeftContent() {
                 BROWSE FILMS
               </button>
         </div>
-  ).
+  )
 }
 
 export default ButtonLeftContent

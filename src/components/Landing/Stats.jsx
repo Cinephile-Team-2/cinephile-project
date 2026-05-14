@@ -28,7 +28,7 @@ function Stats() {
                 </p>
                 </div>
         </div>
-		  ).
+		  )
 }
 
 export default Stats

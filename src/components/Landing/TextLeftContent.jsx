@@ -19,7 +19,7 @@ function TextLeftContent() {
               </p>
         </div>
     </div>
-  ).
+  )
 }
 
 export default TextLeftContent

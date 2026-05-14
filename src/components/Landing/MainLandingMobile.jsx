@@ -89,7 +89,7 @@ function MainLandingMobile() {
             </div>
           </section>
         </main>
-  ).
+  )
 }
 
 export default MainLandingMobile
