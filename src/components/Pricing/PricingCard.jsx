@@ -1,5 +1,4 @@
 import React from "react";
-
 import { FaCheckCircle } from "react-icons/fa";
 
 function PricingCard({
@@ -10,12 +9,13 @@ function PricingCard({
   buttonText,
   premium,
 }) {
-
   return (
-
     <div
       className={`
         relative
+        flex
+        h-full
+        flex-col
         rounded-[20px]
         border
         bg-[#131028]
@@ -34,31 +34,30 @@ function PricingCard({
       {/* Ribbon */}
 
       {premium && (
-
-        <div className="absolute right-0 top-0 overflow-hidden">
+        <div className="absolute top-0 right-0 overflow-hidden w-24 h-24 pointer-events-none">
 
           <div
             className="
-              translate-x-[42px]
-              translate-y-[18px]
+              absolute
+              top-[14px]
+              right-[-30px]
               rotate-45
               bg-[var(--fucsia)]
-              px-16
-              py-2
-              text-[10px]
-              font-bold
-              tracking-[2px]
               text-white
+              text-[8px]
+              font-bold
+              tracking-[1px]
+              px-8
+              py-1
+              uppercase
+              shadow-lg
             "
           >
             BEST VALUE
           </div>
 
         </div>
-
       )}
-
-
 
       {/* Subtitle */}
 
@@ -75,8 +74,6 @@ function PricingCard({
         {subtitle}
       </p>
 
-
-
       {/* Title */}
 
       <h2
@@ -92,8 +89,6 @@ function PricingCard({
       >
         {title}
       </h2>
-
-
 
       {/* Price */}
 
@@ -127,8 +122,6 @@ function PricingCard({
         </span>
 
       </div>
-
-
 
       {/* Features */}
 
@@ -169,41 +162,42 @@ function PricingCard({
 
       </ul>
 
-
-
       {/* Button */}
 
-      <button
-        className={`
-          w-full
-          rounded-[8px]
-          py-4
-          font-[var(--BeVietnamPro)]
-          text-[16px]
-          font-bold
-          transition-all
-          duration-300
+      <div className="mt-auto">
 
-          lg:text-[22px]
+        <button
+          className={`
+            w-full
+            rounded-[8px]
+            py-4
+            font-[var(--BeVietnamPro)]
+            text-[16px]
+            font-bold
+            transition-all
+            duration-300
 
-          ${premium
-            ? "bg-[var(--primary)] text-black"
-            : `
-              border
-              border-[var(--primary)]
-              text-[var(--primary)]
-              hover:bg-[var(--primary)]
-              hover:text-black
-            `
-          }
-        `}
-      >
-        {buttonText}
-      </button>
+            lg:text-[22px]
+
+            ${premium
+              ? "bg-[var(--primary)] text-black"
+              : `
+                border
+                border-[var(--primary)]
+                text-[var(--primary)]
+                hover:bg-[var(--primary)]
+                hover:text-black
+              `
+            }
+          `}
+        >
+          {buttonText}
+        </button>
+
+      </div>
 
     </div>
-
-  )
+  );
 }
 
-export default PricingCard
+export default PricingCard;
