@@ -31,21 +31,7 @@
 
 body {
   margin: 0;
-  
-}
-#root {
   background-color: var(--bg);
 }
 
-@theme {  
-  --color-primary: var(--primary);
-  --color-secondary: var(--secondary);
-  --color-text: var(--text);
-  --color-bg: var(--bg);
-  --color-gris: var(--gris);
-  --color-fucsia: var(--fucsia);
-  --color-border-custom: var(--border);
 
-  --font-spline: var(--SplineSans);
-  --font-vietnam: var(--BeVietnamPro);
-}

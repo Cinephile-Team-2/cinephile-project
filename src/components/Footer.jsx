@@ -2,25 +2,25 @@ import React from 'react'
 
 function Footer() {
   return (
-    <footer className="bg-(--color-bg) border-t border-neutral-800 py-6 px-6 md:px-16 lg:px-24">
-      <div>
-        <span className="text-(--color-primary) flex items-center justify-center">CINEPHILE.</span>
-        <span className="text-(--color-gris) flex items-center justify-center">PRECISION ENGINEERED STREAMING.</span>
+    <footer className="bg-bg border-t border-white/5 py-8 px-6 md:px-16 lg:px-24 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-4">
+      <div className="flex flex-col md:flex-row items-center gap-2 font-spline">
+        <span className="text-primary font-bold tracking-tighter text-lg">CINEPHILE.</span>
+        <span className="text-gris text-[10px] md:text-xs font-medium tracking-widest">PRECISION ENGINEERED STREAMING.</span>
       </div>
       <div>
-        <ul className="text-(--color-gris) text-xs flex gap-4 justify-center">
-            <li>PRIVACY POLICY</li>
-            <li>TERMS OF SERVICE</li>
-            <li>HELP CENTER</li>
-            <li>API</li>
+        <ul className="text-gris text-[10px] md:text-xs font-vietnam flex flex-wrap justify-center gap-4 md:gap-8 tracking-widest">
+            <li className="hover:text-primary cursor-pointer transition-colors">PRIVACY POLICY</li>
+            <li className="hover:text-primary cursor-pointer transition-colors">TERMS OF SERVICE</li>
+            <li className="hover:text-primary cursor-pointer transition-colors">HELP CENTER</li>
+            <li className="hover:text-primary cursor-pointer transition-colors">API</li>
         </ul>
       </div>
-        <div>
-          <a  href="#" className="flex" aria-label="Twitter ">
-              <i class="fa-solid fa-globe"></i>
+        <div className="hidden md:flex items-center gap-6 text-gris">
+          <a  href="#" className="hover:text-primary transition-colors" aria-label="Twitter ">
+              <i class="fa-solid fa-globe text-lg"></i>
           </a>
-          <a href="#"  className="flex" aria-label="Twitter">
-            <i class="fa-solid fa-share-nodes"></i>
+          <a href="#"  className="hover:text-primary transition-colors" aria-label="Twitter">
+            <i class="fa-solid fa-share-nodes text-lg"></i>
           </a>
 
         </div>

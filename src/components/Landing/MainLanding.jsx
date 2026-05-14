@@ -8,7 +8,7 @@ import SideCard from './SideCard.jsx'
 function MainLanding() {
   return (
     /* Hero */
-    <main className="flex-1 grid lg:grid-cols-2 gap-16 px-8 lg:px-14 py-12 lg:py-20 items-center">
+    <main className="flex-1 grid lg:grid-cols-2 gap-16 px-24 pt-48 pb-16 items-center">
     {/* Left Content */}
       <section className="space-y-10 max-w-2xl">
         <TextLeftContent/>

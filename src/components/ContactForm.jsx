@@ -8,15 +8,16 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="bg-border-custom/30 p-8 md:p-12 rounded-3xl border border-white/5 shadow-2xl space-y-10">
+    <div className="bg-white/5 p-8 md:p-12 rounded-3xl border border-white/5 shadow-2xl space-y-10">
       <form onSubmit={handleSubmit} className="space-y-10">
-        
         {/* Fila superior: Identity y E-mail */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          
           {/* Campo IDENTITY */}
           <div className="space-y-3">
-            <label htmlFor="identity" className="text-[10px] font-bold text-primary uppercase tracking-widest font-spline">
+            <label
+              htmlFor="identity"
+              className="text-[10px] font-bold text-primary uppercase tracking-widest font-spline"
+            >
               IDENTITY
             </label>
             <input
@@ -31,7 +32,10 @@ const ContactForm = () => {
 
           {/* Campo E-MAIL */}
           <div className="space-y-3">
-            <label htmlFor="email" className="text-[10px] font-bold text-primary uppercase tracking-widest font-spline">
+            <label
+              htmlFor="email"
+              className="text-[10px] font-bold text-primary uppercase tracking-widest font-spline"
+            >
               E-MAIL
             </label>
             <input
@@ -47,7 +51,10 @@ const ContactForm = () => {
 
         {/* Campo MESSAGE */}
         <div className="space-y-3">
-          <label htmlFor="message" className="text-[10px] font-bold text-primary uppercase tracking-widest font-spline">
+          <label
+            htmlFor="message"
+            className="text-[10px] font-bold text-primary uppercase tracking-widest font-spline"
+          >
             MESSAGE
           </label>
           <textarea
@@ -62,12 +69,11 @@ const ContactForm = () => {
 
         {/* Pie del formulario: Seguridad y Botón */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 pt-4">
-          
           {/* Indicador de seguridad */}
           <div className="flex items-center space-x-3 text-gris">
-            <Icon 
-              icon="fa-solid fa-shield-halved" 
-              className="text-sm opacity-60" 
+            <Icon
+              icon="fa-solid fa-shield-halved"
+              className="text-sm opacity-60"
             />
             <span className="text-[10px] uppercase tracking-[0.15em] font-bold font-spline">
               END-TO-END SECURE
@@ -75,16 +81,15 @@ const ContactForm = () => {
           </div>
 
           {/* Botón de envío usando tu componente Button */}
-          <Button 
-            type="submit" 
-            variant="primary" 
+          <Button
+            type="submit"
+            variant="primary"
             size="lg"
             className="w-full md:w-auto"
           >
             SEND
           </Button>
         </div>
-
       </form>
     </div>
   );

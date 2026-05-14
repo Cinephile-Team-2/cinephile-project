@@ -4,12 +4,12 @@ function MainLandingMobile() {
   return (
         
         <main className="px-6">
-             <section className="px-6 pt-14">
+             <section className="px-6 pt-28">
             <div className="inline-flex items-center gap-2 bg-white/5 border border-fuchsia-400/20 px-4 py-2 rounded-full text-[10px] tracking-widest uppercase text-fuchsia-300">
               Ultra HD Streaming
             </div>
 
-            <h2 className="mt-8 text-5xl font-black leading-tight tracking-tight">
+            <h2 className="mt-8 text-5xl text-text leading-tight tracking-tight">
               Discover <span className="text-cyan-400">Pure</span> Cinema.
             </h2>
 
@@ -57,7 +57,7 @@ function MainLandingMobile() {
           {/* KEEP WATCHING */}
           <section className="mt-14">
             <div className="flex items-center justify-between">
-              <h3 className="text-2xl font-bold">
+              <h3 className="text-2xl font-bold text-text">
                 Keep Watching
               </h3>
 
@@ -74,7 +74,7 @@ function MainLandingMobile() {
               />
 
               <div className="flex-1">
-                <h4 className="font-semibold">
+                <h4 className="font-semibold text-text">
                   Neo Tokyo 2088
                 </h4>
 
