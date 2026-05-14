@@ -6,7 +6,7 @@ import Footer from './components/Footer.jsx'
 
 import MainLanding from './components/Landing/MainLanding.jsx'
 import MainLandingMobile from './components/Landing/MainLandingMobile.jsx'
-
+import Nav from './components/Nav.jsx'
 
 function App() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
