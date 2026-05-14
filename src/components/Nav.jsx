@@ -2,32 +2,28 @@ import React from "react";
 import { Link, useLocation } from "react-router";
 import { useEffect, useState } from "react";
 
-const MOBILE_BREAKPOINT = 768;
-
 function Nav() {
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+   useEffect(() => {
+     const handleResize = () => {
+       setIsMobile(window.innerWidth < 768);
+     };
+
+     window.addEventListener("resize", handleResize);
+
+     return () => {
+       window.removeEventListener("resize", handleResize);
+     };
+   }, []);
+
   const { pathname } = useLocation();
   const isActive = (path) => pathname === path;
-
-  const [isMobile, setIsMobile] = useState(
-    window.innerWidth < MOBILE_BREAKPOINT,
-  );
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < MOBILE_BREAKPOINT);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
 
   const baseClasses =
     "left-0 right-0 z-50 flex items-center bg-bg font-vietnam px-6 py-4 transition-colors duration-300";
   const positionClasses = isMobile
-    ? "fixed bottom-0 border-t border-gray-200 justify-around"
+    ? "fixed bottom-0 left-0 right-0 border-t border-gray-200 justify-around"
     : "top-0 justify-start gap-12";
 
   const activeStyle = "text-primary relative transition-all";

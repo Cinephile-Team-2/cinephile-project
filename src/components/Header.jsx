@@ -10,10 +10,10 @@ function Header() {
           CINEPHILE
         </div>
 
-        <div className="hidden md:flex items-center">
+        <div className="hidden md:flex">
           <Nav />
         </div>
-        <div className="flex items-center gap-4 md:gap-8">
+        <div className="hidden md:flex items-center gap-4 md:gap-8">
           <button className="text-gris font-vietnam text-sm font-medium hover:text-primary transition-colors">
             Sign In
           </button>
