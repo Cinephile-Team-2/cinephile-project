@@ -28,7 +28,7 @@ function SideCard() {
                 </p>
               </div>
             </div>
-  )
+  ).
 }
 
 export default SideCard
