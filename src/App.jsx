@@ -10,7 +10,6 @@ import Nav from "./components/Nav.jsx";
 
 function App() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
-
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768);
@@ -22,7 +21,6 @@ function App() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-
   return (
     <>
       <Header />
@@ -34,5 +32,4 @@ function App() {
     </>
   );
 }
-
 export default App;

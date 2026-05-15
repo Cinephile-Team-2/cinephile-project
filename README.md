@@ -251,6 +251,7 @@ CINEPHILE-PROJECT/
 
 ## Presentación
 ### ENLACE PRESENTACIÓN CANVA
+https://canva.link/9cgyym6svdzz90p
 
 ## Tecnologias utilizadas
  Nuestro producto está realizado con las siguientes herramientas: 
